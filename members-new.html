@@ -92,70 +92,101 @@
 
                     <!-- Main Content -->
 
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12">
+                    <div class="row pb-5">
+                        <div class="col-12">
 
                             <div class="card">
 
                                 <div class="card-header">
                                     <i class="fas fa-user-plus me-1"></i>
-                                    Form Add Member
+                                    Form New Member
                                 </div>
 
-                                <div class="card-body">
+                                <form action="members.html">
 
-                                    <form action="members.html">
+                                    <div class="card-body">
+                                        <div class="row">
 
-                                        <div class="form-group mb-3">
-                                            <label for="name">Name</label>
-                                            <input type="text" id="name" name="name" placeholder="Input name here"
-                                                class="form-control">
+                                            <!-- left side -->
+                                            <div class="col-lg-4 col-sm-12">
+                                                <img src="assets/img/members/00.png" alt="Member Photo"
+                                                    class="img-fluid img-thumbnail p-4">
+
+                                                <div class="form-group mt-3">
+                                                    <label for="photo" class="mb-2 text-secondary">Change Photo</label>
+                                                    <input type="file" id="photo" class="form-control form-control-lg">
+                                                </div>
+
+                                            </div>
+                                            <!-- end left side -->
+
+
+                                            <!-- right side -->
+                                            <div class="col-lg-8 col-sm-12">
+
+                                                <div class="form-group mb-3">
+                                                    <label for="name" class="mb-2 text-secondary">Name</label>
+                                                    <input type="text" id="name" name="name"
+                                                        placeholder="Input name here"
+                                                        class="form-control form-control-lg" value="">
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="place_of_birth" class="mb-2 text-secondary">Place of
+                                                        Birth</label>
+                                                    <input type="text" id="place_of_birth" name="place_of_birth"
+                                                        placeholder="Input place of birth"
+                                                        class="form-control form-control-lg" value="">
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="place_of_birth" class="mb-2 text-secondary">Date of
+                                                        Birth</label>
+                                                    <input type="date" id="place_of_birth" name="place_of_birth"
+                                                        class="form-control form-control-lg" value="">
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="gender" class="mb-2 text-secondary">Gender</label>
+                                                    <select class="form-select form-select-lg" id="gender">
+                                                        <option selected></option>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="email" class="mb-2 text-secondary">Email</label>
+                                                    <input type="email" id="email" name="email"
+                                                        class="form-control form-control-lg" value="" required>
+                                                </div>
+
+                                                <div class="form-group mb-3">
+                                                    <label for="password" class="mb-2 text-secondary">Password</label>
+                                                    <input type="password" id="password" name="password"
+                                                        class="form-control form-control-lg" value="" required>
+                                                </div>
+
+                                            </div>
+                                            <!-- end right side -->
+
                                         </div>
+                                    </div>
 
-                                        <div class="form-group mb-3">
-                                            <label for="place_of_birth">Place of Birth</label>
-                                            <input type="text" id="place_of_birth" name="place_of_birth"
-                                                placeholder="Input place of birth" class="form-control">
-                                        </div>
+                                    <div class="card-footer">
 
-                                        <div class="form-group mb-3">
-                                            <label for="place_of_birth">Date of Birth</label>
-                                            <input type="date" id="place_of_birth" name="place_of_birth"
-                                                class="form-control">
-                                        </div>
+                                        <div class="form-group">
+                                            <input type="reset" value="Reset" class="btn btn-lg btn-secondary">
 
-                                        <div class="form-group mb-3">
-                                            <label for="gender">Gender</label>
-                                            <select class="form-select" id="gender">
-                                                <option selected></option>
-                                                <option>Male</option>
-                                                <option>Female</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <label for="email">Email</label>
-                                            <input type="email" id="email" name="email" class="form-control" required>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <label for="password">Password</label>
-                                            <input type="password" id="password" name="password" class="form-control"
-                                                required>
-                                        </div>
-
-                                        <div class="form-group mb-3">
-                                            <input type="reset" value="Reset" class="btn btn-sm btn-secondary">
-
-                                            <button class="btn btn-sm btn-primary">
+                                            <button class="btn btn-lg btn-primary">
                                                 <i class="fas fa-save me-1"></i>
-                                                Submit
+                                                Save
                                             </button>
                                         </div>
 
-                                    </form>
+                                    </div>
 
-                                </div>
+                                </form>
 
                             </div>
 
